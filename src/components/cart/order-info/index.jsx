@@ -16,10 +16,10 @@ function OrderInfo() {
   } = useForm({
     mode: 'onChange',
     defaultValues: {
-      gender: userData.gender,
-      fullName: userData.fullName,
-      phoneNumber: userData.phoneNumber,
-      email: userData.email,
+      gender: userData?.gender || 'male',
+      fullName: userData?.fullName || '',
+      phoneNumber: userData?.phoneNumber || '',
+      email: userData?.email || '',
     },
   });
   const onSubmit = (data) => {
