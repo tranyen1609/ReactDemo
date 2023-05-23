@@ -42,11 +42,13 @@ function LoginDialog({ open, close }) {
   const [errorMessage, setErrorMessage] = useState('');
   const handleTogglePassword = () => setShowPassword((showPassword) => !showPassword);
   const handleToggleConPassword = () => setShowConPassword((showConPassword) => !showConPassword);
-  useEffect(() => {
-    setDialogForm(1);
+  const handleCloseDialog = () => {
+    close();
     reset();
     setErrorMessage('');
-  }, [close, reset]);
+    setHeader('Đăng nhập');
+    setDialogForm(1);
+  };
   const onLogin = (data) => {
     let userData = JSON.parse(localStorage.getItem('userData')) || [];
     const user = userData.find((user) => user.phoneNumber === data.phoneNumber);
@@ -110,7 +112,7 @@ function LoginDialog({ open, close }) {
       <Dialog
         className="login"
         open={open}
-        onClose={close}
+        onClose={handleCloseDialog}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
