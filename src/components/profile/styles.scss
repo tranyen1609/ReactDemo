@@ -1,0 +1,33 @@
+.profile {
+  width: 550px;
+  max-width: 100%;
+  margin: 1rem auto;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 0.5rem;
+  background-color: white;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0rem 0.4rem 2rem;
+  .info {
+    padding: 20px;
+  }
+  .update-btn {
+    margin: 15px 20px;
+    Button {
+      width: 100%;
+      padding: 14px 9px;
+      background: #008848;
+      font-weight: bold;
+    }
+  }
+}
+.profile-dialog {
+  text-align: center;
+  .error-message {
+    color: red;
+  }
+  .updateBtn {
+    width: 100%;
+    margin: 5px 12px;
+    background: #008848;
+  }
+}

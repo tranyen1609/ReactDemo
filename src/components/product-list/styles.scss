@@ -1,0 +1,36 @@
+.title {
+  background: #6f9972;
+  span {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 10px;
+    text-align: left;
+  }
+}
+.product-img {
+  height: 160px;
+  width: 160px;
+  cursor: pointer;
+}
+.product-info {
+  line-height: 1.3em;
+  font-size: 13px;
+  text-align: left;
+  margin-bottom: 15px;
+  h4 {
+    min-height: 35px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  span {
+    color: #b10e0e;
+    cursor: pointer;
+  }
+}
+.buy-btn {
+  max-width: 100%;
+  width: 200px;
+}

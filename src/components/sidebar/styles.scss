@@ -1,0 +1,14 @@
+.menu-list {
+  width: '100%';
+  background-color: white;
+  border: '1px solid rgb(243, 243, 243)';
+  border-radius: 0.5rem;
+  .pd0 {
+    padding: 0;
+    .sidebar-icon {
+      height: 45px;
+      width: 45px;
+      margin-right: 5px;
+    }
+  }
+}

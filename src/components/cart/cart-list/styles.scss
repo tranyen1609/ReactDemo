@@ -1,0 +1,18 @@
+.cart-body {
+  padding: 12px 10px 10px;
+}
+.cart-total {
+  padding: 5px 20px;
+  .cost {
+    display: flex;
+    margin: 5px 0;
+    span {
+      width: 200px;
+      text-align: left;
+    }
+    label {
+      width: calc(100% - 150px);
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.header {
+  background: #008848;
+  min-height: 50px;
+  display: block;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 1220px;
+  padding-left: calc((100% - 1200px) / 2);
+  padding-right: calc((100% - 1200px) / 2);
+  .top-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .navbar-brand {
+      font-weight: 800;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #fbe91b;
+      text-decoration: none;
+    }
+    .navbar-nav {
+      margin-left: auto;
+    }
+
+    .search-food {
+      background-color: white;
+      border-radius: 4px;
+      margin-left: auto;
+      input {
+        height: 0.4375em;
+      }
+    }
+
+    .cart-food {
+      float: right;
+      margin: 8px;
+      .navi-btn {
+        font-size: 1rem;
+        color: white;
+        span {
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+}
