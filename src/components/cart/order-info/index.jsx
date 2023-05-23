@@ -35,6 +35,7 @@ function OrderInfo() {
           </div>
           <FormControl className="mb-12">
             <RadioGroup
+              defaultValue="male"
               row
               aria-labelledby="demo-row-radio-buttons-group-label"
               name="row-radio-buttons-group"
@@ -42,7 +43,6 @@ function OrderInfo() {
               <FormControlLabel
                 {...register('gender', { required: true })}
                 value="male"
-                checked
                 control={<Radio />}
                 label="Anh"
               />
@@ -113,16 +113,12 @@ function OrderInfo() {
           </div>
           <FormControl className="mb-12">
             <RadioGroup
+              defaultValue="2"
               aria-labelledby="demo-row-radio-buttons-group-label"
               name="row-radio-buttons-group"
             >
               <FormControlLabel value="1" control={<Radio />} label="Thẻ Visa, Master, JCB" />
-              <FormControlLabel
-                value="2"
-                checked
-                control={<Radio />}
-                label="Tiền mặt khi nhận hàng"
-              />
+              <FormControlLabel value="2" control={<Radio />} label="Tiền mặt khi nhận hàng"/>
               <FormControlLabel value="3" control={<Radio />} label="Chuyển khoản" />
               <FormControlLabel value="4" control={<Radio />} label="Cà thẻ khi nhận hàng" />
             </RadioGroup>
