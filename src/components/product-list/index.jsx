@@ -4,7 +4,7 @@ import './styles.scss';
 import ProductItem from './product-item';
 import { useParams, useSearchParams } from 'react-router-dom';
 import { category } from '../../assets/category';
-import { productList } from '../../assets/product-list';
+import useData from '../../assets/data';
 
 function searchFilter(productList, searchText) {
   return productList.filter((item) => {
@@ -16,7 +16,7 @@ function ProductList() {
   const { cate } = useParams();
   const [searchParams] = useSearchParams();
   const searchText = searchParams.get('search');
-  let filterData = [...productList];
+  let filterData = useData();
   let title = 'Tất cả sản phẩm';
   if (cate && cate !== 'home') {
     const cateItem = category.find((i) => i.cateURL === cate);
@@ -26,7 +26,6 @@ function ProductList() {
   if (searchText) {
     filterData = searchFilter(filterData, searchText);
   }
-  console.log(filterData);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <div className="title">
